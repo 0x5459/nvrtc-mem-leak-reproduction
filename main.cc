@@ -87,8 +87,8 @@ int main()
         const char *lopts[] = {"-arch=sm_80"};
         NVJITLINK_SAFE_CALL(handle, nvJitLinkCreate(&handle, 1, lopts));
         NVJITLINK_SAFE_CALL(handle, nvJitLinkAddFile(handle, NVJITLINK_INPUT_OBJECT,
-                                                    //  "./constant.o"));
-                                                     "./non-constant.o"));
+                                                     "./constant.o"));
+                                                    //  "./non-constant.o"));
         NVJITLINK_SAFE_CALL(handle, nvJitLinkComplete(handle));
         NVJITLINK_SAFE_CALL(handle, nvJitLinkDestroy(&handle));
         NVRTC_SAFE_CALL(nvrtcDestroyProgram(&prog));

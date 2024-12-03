@@ -5,6 +5,6 @@ __device__ void foo(long long *arg)
 {
     for (int i = 0; i < 1024; i++)
     {
-        arg[i] =  some_constant[i];
+        arg[i] = some_constant[i];
     }
 }
