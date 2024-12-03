@@ -14,6 +14,6 @@ make build
 ```
 ## Observe the `top` command results
 ```bash
-top -d1 -p $(pgrep -d, a.out)ted
+top -d1 -p $(pgrep -d, a.out)
 ```
 The value of the `RES` column in the `top` command keeps increasing
